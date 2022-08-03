@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,800;0,900;1,100;1,200;1,300;1,500;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #9485;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendar {
+  width: 450px;
+  height: 500px;
+  box-shadow: 0 0.5rem 0.3rem rgba(0, 0, 0, 0.4);
+  background-color: #222227;
+}
+.month {
+  width: 100%;
+  height: 120px;
+  padding: 0 30px;
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weekdays {
+  width: 100%;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.weekdays div {
+  width: calc(440px / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+.days div {
+  margin: 5px;
+  width: calc(371px / 7);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+/* .prev-date, .next-date{
+    opacity: .5;
+} */
+.today {
+  background-color: #167e56;
+}
